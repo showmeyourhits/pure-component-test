@@ -13,7 +13,10 @@ import ChildrenList from './components/ChildrenList';
 import Song from './components/Song';
 
 import PureChildrenList from './components/PureChildrenList';
+import WhatAreChildren from './components/WhatAreChildren';
 import PureSong from './components/PureSong';
+
+const singleSong = {title: "All the single components"};
 
 class App extends Component {
   state = {
@@ -65,6 +68,18 @@ class App extends Component {
               <div className="col"><ChildrenList>
                 {songs.map(song => <Song song={song} />)}
               </ChildrenList></div>
+            </div>
+            <div className="row">
+              <div className="col">
+                <WhatAreChildren title="Single Song">
+                  <PureSong song={singleSong} />
+                </WhatAreChildren>
+              </div>
+              <div className="col">
+                <WhatAreChildren title="Just text">
+                  I'm simple text
+                </WhatAreChildren>
+              </div>
             </div>
           </div>
         </div>

@@ -6,15 +6,7 @@ import debugRender from 'react-render-debugger';
 export class PureChildrenList extends React.PureComponent {
   static propTypes = {
     children: PropTypes.array.isRequired,
-    withSingleChild: PropTypes.bool.isRequired,
   }
-
-  // shouldComponentUpdate (nextProps) {
-  //   console.log('########################');
-  //   console.log(`Component with ${this.props.withSingleChild ? 'single child' : 'children'}`)
-  //   console.log(`Are children equal? - ${nextProps.children === this.props.children}`);
-  //   console.log('########################');
-  // }
 
   render() {
     return (

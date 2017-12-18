@@ -8,7 +8,6 @@ export class PureList extends React.PureComponent {
     songs: PropTypes.array.isRequired,
   }
 
-
   render() {
     return (
       <table className="table table-bordered">
